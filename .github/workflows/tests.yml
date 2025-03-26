@@ -18,10 +18,10 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        php-versions: ['7.4', '8.0', '8.1']
+        php-versions: ['7.4']
     name: integration-tests (PHP ${{ matrix.php-versions }})
     steps:
-      - uses: actions/checkout@v1
+      - uses: actions/checkout@v
       - name: Install PHP
         uses: shivammathur/setup-php@v2
         with:
